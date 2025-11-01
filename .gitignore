@@ -1,9 +1,42 @@
-@"
-.idea/
-.venv/
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.env
-"@ | Out-File -Encoding utf8 .gitignore
+*.log
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter and IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Build and cache
+build/
+dist/
+*.egg-info/
+
+# Model and data files (too large for GitHub)
+*.h5
+*.keras
+*.npy
+*.npz
+*.pkl
+*.pt
+*.ckpt
+
+# Generated music and other outputs
+generated_music/
+midi_songs/
+*.mid
+*.wav
+*.mp3
+
+# OS files
+.DS_Store
+Thumbs.db
+
